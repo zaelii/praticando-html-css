@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -34,10 +35,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
   /*fim do reset.css*/
 
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
-
 :root {
     --clr-background: #00030C;
     --clr-title: #FFFFFF;
@@ -51,6 +48,7 @@ body {
     color: var(--clr-title);
     font-family: var(--font-default);
     font-size: 16px;
+    font-weight: 400px;
 }
 
 .principal {
@@ -77,4 +75,14 @@ body {
 .botao__secundario {
     background-color: transparent;
     border: 2px solid var(--clr-title);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--clr-subtitle);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
 }
