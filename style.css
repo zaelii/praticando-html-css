@@ -1,0 +1,80 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+  #root, #__next {
+    isolation: isolate;
+}
+
+  /*fim do reset.css*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+:root {
+    --clr-background: #00030C;
+    --clr-title: #FFFFFF;
+    --clr-subtitle: #C0C0C0;
+    --clr-buttons: #167BF7;
+    --font-default: 'Inter';
+}
+
+body {
+    background-color: var(--clr-background);
+    color: var(--clr-title);
+    font-family: var(--font-default);
+    font-size: 16px;
+}
+
+.principal {
+    background-image: url(./assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--clr-buttons);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 1rem;
+    color: var(--clr-title);
+    display: block;
+}
+
+.botao__secundario {
+    background-color: transparent;
+    border: 2px solid var(--clr-title);
+}
